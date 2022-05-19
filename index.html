@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon 4G</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./form.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div id="content">
+        <div id="pokedex">
+            <form action="index.html" method="post">
+                <div id="combat-table">
+                    <h2> Matrice de combat </h2>
+                    <table id="table-combat">
+                        <tr>
+                            <th>
+                                
+                            </th>
+                            <th>
+                                Très fort
+                            </th>
+                            <th>
+                                Fort
+                            </th>
+                            <th>
+                                Faible
+                            </th>
+                            <th>
+                                Très faible
+                            </th>
+                            <th>
+                                Immunisé
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/acier.png" alt="acier">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="acierTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="acierFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="acierFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="acierTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="acierImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/combat.png" alt="combat">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="combatTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="combatFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="combatFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="combatTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="combatImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/dragon.png" alt="dragon">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="dragonTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="dragonFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="dragonFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="dragonTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="dragonImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/eau.png" alt="eau">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="eauTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="eauFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="eauFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="eauTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="eauImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/electrik.png" alt="electrik">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="électricitéTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="électricitéFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="électricitéFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="électricitéTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="électricitéImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/feu.png" alt="feu">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="feuTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="feuFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="feuFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="feuTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="feuImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/glace.png" alt="glace">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="glaceTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="glaceFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="glaceFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="glaceTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="glaceImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/insecte.png" alt="insecte">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="insecteTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="insecteFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="insecteFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="insecteTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="insecteImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/normal.png" alt="normal">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="normalTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="normalFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="normalFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="normalTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="normalImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/plante.png" alt="plante">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="planteTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="planteFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="planteFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="planteTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="planteImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/poison.png" alt="poison">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="poisonTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="poisonFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="poisonFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="poisonTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="poisonImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/psy.png" alt="psy">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="psyTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="psyFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="psyFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="psyTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="psyImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/roche.png" alt="roche">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="rocheTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="rocheFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="rocheFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="rocheTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="rocheImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/sol.png" alt="sol">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="solTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="solFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="solFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="solTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="solImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/spectre.png" alt="spectre">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="spectreTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="spectreFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="spectreFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="spectreTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="spectreImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/tenebre.png" alt="tenebre">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="ténèbreTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="ténèbreFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="ténèbreFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="ténèbreTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="ténèbreImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="assets/vol.png" alt="vol">
+                            </th>
+                            <td>
+                                <input type="checkbox" name="volTrèsFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="volFort">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="volFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="volTrèsFaible">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="volImmunisé">
+                                <img src="assets/ball.png" alt="select">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="flex-column">
+                    <div id="type">
+                        <h2> Est de type </h2>
+                        <div id="list-type">
+                            <div class="type">
+                                <input type="checkbox" name="typeAcier">
+                                <label for="typeAcier"> <img src="assets/badge-acier.png" alt="acier" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeCombat">
+                                <label for="typeCombat"> <img src="assets/badge-combat.png" alt="combat" /> </label>
+                            </div> 
+                            <div class="type">
+                                <input type="checkbox" name="typeDragon">
+                                <label for="typeDragon"> <img src="assets/badge-dragon.png" alt="dragon" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeEau">
+                                <label for="typeEau"> <img src="assets/badge-eau.png" alt="eau" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeElectricité">
+                                <label for="typeElectricité"> <img src="assets/badge-electrik.png" alt="electricité" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeFeu">
+                                <label for="typeFeu"> <img src="assets/badge-feu.png" alt="feu" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeGlace">
+                                <label for="typeGlace"> <img src="assets/badge-glace.png" alt="glace" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeInsecte">
+                                <label for="typeInsecte"> <img src="assets/badge-insecte.png" alt="insecte" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeNormal">
+                                <label for="typeNormal"> <img src="assets/badge-normal.png" alt="normal" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typePlante">
+                                <label for="typePlante"> <img src="assets/badge-plante.png" alt="plante" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typePoison">
+                                <label for="typePoison"> <img src="assets/badge-poison.png" alt="poison" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typePsy">
+                                <label for="typePsy"> <img src="assets/badge-psy.png" alt="psy" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeRoche">
+                                <label for="typeRoche"> <img src="assets/badge-roche.png" alt="roche" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeSol">
+                                <label for="typeSol"> <img src="assets/badge-sol.png" alt="sol" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeSpectre">
+                                <label for="typeSpectre"> <img src="assets/badge-spectre.png" alt="spectre" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeTénèbre">
+                                <label for="typeTénèbre"> <img src="assets/badge-tenebre.png" alt="tenebre" /> </label>
+                            </div>
+                            <div class="type">
+                                <input type="checkbox" name="typeVol">
+                                <label for="typeVol"> <img src="assets/badge-vol.png" alt="vol" /> </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="poids-range">
+                        <h2> Poids </h2>
+                        <span class="multi-range">
+                            <input type="range" min="0" max="1000" value="0" class="lower">
+                            <input type="range" min="0" max="1000" value="1000" class="upper">
+                        </span>
+                    </div>
+                    <div id="taille-range">
+                        <h2> Taille </h2>
+                        <span class="multi-range">
+                            <input type="range" min="0" max="100" value="0" class="lower">
+                            <input type="range" min="0" max="100" value="10" class="upper">
+                        </span>
+                    </div>
+                    <div id="taux-de-capture-range">
+                        <h2> Taux de capture </h2>
+                        <span class="multi-range">
+                            <input type="range" min="0" max="100" value="0" class="lower">
+                            <input type="range" min="0" max="100" value="100" class="upper">
+                        </span>
+                    </div>
+                    <button class="submit"><span>Search</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>

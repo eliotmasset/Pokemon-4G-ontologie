@@ -1,0 +1,265 @@
+
+input[type=range] {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 400px;
+    margin: 0;
+    padding: 0 2px;
+    /* Add some L/R padding to ensure box shadow of handle is shown */
+    overflow: hidden;
+    border: 0;
+    border-radius: 1px;
+    outline: none;
+    background: linear-gradient(grey, grey) no-repeat center;
+    /* Use a linear gradient to generate only the 2px height background */
+    background-size: 100% 2px;
+    pointer-events: none;
+  }
+input[type=range]:active,
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    height: 28px;
+    width: 28px;
+    border-radius: 28px;
+    background-color: transparent;
+    background: url("assets/ball.png") center center no-repeat;
+    filter: hue-rotate(180deg);
+    background-size: cover;
+    position: relative;
+    margin: 5px 0;
+    /* Add some margin to ensure box shadow is shown */
+    cursor: pointer;
+    -webkit-appearance: none;
+            appearance: none;
+    pointer-events: all;
+    box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
+}
+input[type=range]::-webkit-slider-thumb::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 100%;
+    width: 2000px;
+    height: 2px;
+}
+#taille-range, #taux-de-capture-range, #poids-range {
+    height: 60px;
+}
+.multi-range {
+    position: relative;
+    height: 50px;
+}
+.multi-range input[type=range] {
+    position: absolute;
+}
+.multi-range input[type=range]:nth-child(1)::-webkit-slider-thumb::before {
+    background-color: red;
+}
+.multi-range input[type=range]:nth-child(2) {
+    background: none;
+}
+.multi-range input[type=range]:nth-child(2)::-webkit-slider-thumb::before {
+    background-color: grey;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#content {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    padding-top:100px;
+    background-color: #D30A40;
+    bottom: 0;
+}
+
+#pokedex {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#pokedex form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#table-combat {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#table-combat td {
+    border: 1px solid;
+}
+#table-combat th {
+    border: 1px solid;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#table-combat th:not(#table-combat th:first-child) {
+    width: 100px;
+}
+
+#table-combat th img {
+    display: block;
+}
+
+#list-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin: 0;
+    padding: 0;
+    width: 450px;
+}
+
+#list-type .type {
+    flex-basis: 10%;
+    margin: 2px 5px;
+}
+
+#type .type label {
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#type .type label img {
+    border-radius: 5px;
+    overflow: hidden;
+    border: #D30A40 solid 2px;
+    display: block;
+}
+
+#type .type input[type=checkbox] {
+    display: none;
+}
+#type .type input[type=checkbox]:checked + label img{
+    border: yellow solid 2px;
+}
+
+#table-combat input[type=checkbox] {
+    display: none;
+}
+#table-combat input[type=checkbox]:checked + img{
+    filter: grayscale(0%) drop-shadow(2px 2px 5px #000);
+}
+#table-combat input[type=checkbox] + img{
+    filter: grayscale(100%) drop-shadow(2px 2px 3px #000);
+    width: 20px;
+    margin: auto;
+    cursor: pointer;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+button.submit {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 7px;
+    background: transparent;
+    width: 80%;
+    margin: 20px 5% 10px 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 1px;
+    border: 3px solid transparent;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(#1e1f26, #1e1f26),
+      linear-gradient(305deg, #e23b4a, #e23b4a);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+  
+button.submit span {
+    color: #fff;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+  
+button.submit:hover span {
+    background: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 11;
+}
+  
+button.submit:hover {
+    z-index: 12;
+    border-left: 3px solid transparent;
+}
+  
+button.submit::after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    overflow: hidden;
+    height: 100%;
+    background-color: yellow;
+    left: -35%;
+    top: 0;
+    transform: skew(30deg);
+    transition-duration: 2s;
+    transform-origin: top left;
+    width: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+  
+button.submit:hover::after {
+    height: 100%;
+    width: 135%;
+}
+
+  
+@keyframes rotate {
+    0% {
+      background-position: 0% 53%;
+    }
+    50% {
+      background-position: 100% 48%;
+    }
+    100% {
+      background-position: 0% 53%;
+    }
+}
