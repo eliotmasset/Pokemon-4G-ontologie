@@ -71,6 +71,7 @@ input[type=range]::-webkit-slider-thumb::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Montserrat, sans-serif;
 }
 
 body {
@@ -261,5 +262,291 @@ button.submit:hover::after {
     }
     100% {
       background-position: 0% 53%;
+    }
+}
+
+
+#modal-results {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 12;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.modal-content {
+    background: url("assets/screen.jpg") center center;
+    background-size: 500%;
+    position: absolute;
+    z-index: 1;
+    width: 37vw;
+    min-height: 25vh;
+    margin-top: 0%;
+    transform: translateY(-50%);
+    margin-left: 21vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+#modal-results #pokedex_imgs {
+    position: absolute;
+    z-index: 20;
+    width: 80%;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#modal-results #pokedex_haut {
+    position: absolute;
+    z-index: 3;
+    width: 80%;
+    left: 10%;
+    top: 0;
+    transform: translateY(-100%);
+}
+#modal-results #pokedex_bas {
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    left: 10%;
+    top: 0;
+}
+
+#modal-results.open .modal-content {
+    animation: open_content 1s ease-out;
+    min-height: 80vh;
+}
+#modal-results.open #pokedex_haut {
+    animation: open_top 0.9s ease-out;
+    transform: translateY(calc(-100% - 200px));
+}
+#modal-results.open #pokedex_bas {
+    animation: open_bottom 0.9s ease-out;
+    transform: translateY(200px);
+}
+#modal-results.open #pokedex_imgs {
+    animation: open_imgs 0.3s ease-out;
+    transform: translateY(-50%) scale(1);
+}
+
+#modal-results.close .modal-content {
+    animation: close_content 1s ease-out;
+    min-height: 25vh;
+}
+#modal-results.close #pokedex_haut {
+    animation: close_top 0.6s ease-out;
+    transform: translateY(-100%);
+}
+#modal-results.close #pokedex_bas {
+    animation: close_bottom 0.6s ease-out;
+    transform: translateY(0);
+}
+#modal-results.close #pokedex_imgs {
+    animation: close_imgs 0.9s ease-out;
+    transform: translateY(-50%) scale(0.8);
+}
+
+#pokedex_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#pokedex_img {
+    height: 130px;
+}
+
+#pokedex_type img, #pokedex_tres_faible img, #pokedex_tres_fort img, #pokedex_faible img, #pokedex_fort img, #pokedex_immunise img {
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+#pokedex_tres_faible, #pokedex_tres_fort, #pokedex_faible, #pokedex_fort, #pokedex_immunise {
+    width: 80%;
+    left: 10%;
+}
+
+#pokedex_left {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+    cursor: pointer;
+}
+#pokedex_right {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+    cursor: pointer;
+}
+#pokedex_left:hover,#pokedex_right:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#pokedex_left.disable,#pokedex_right.disable, #pokedex_left:hover.disable,#pokedex_right:hover.disable {
+    background-color: rgba(89, 89, 89, 0.8);
+}
+
+#pokedex_left::after {
+    content: "<";
+    position: absolute;
+    color:black;
+    font-size: 30px;
+    font-weight: 900;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+#pokedex_right::after {
+    content: ">";
+    position: absolute;
+    color:black;
+    font-size: 30px;
+    font-weight: 900;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+@keyframes open_imgs {
+    0% {
+        transform: translateY(-50%) scale(0.8);
+    }
+    100% {
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+@keyframes open_bottom {
+    0% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(200px);
+    }
+}
+@keyframes open_content {
+    0% {
+        min-height: 25vh;
+    }
+    50% {
+        min-height: 25vh;
+    }
+    100% {
+        min-height: 80vh;
+    }
+}
+@keyframes open_top {
+    0% {
+        transform: translateY(-100%);
+    }
+    70% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(calc(-100% - 200px));
+    }
+}
+
+
+@keyframes close_imgs {
+    0% {
+        transform: translateY(-50%) scale(1);
+    }
+    70% {
+        transform: translateY(-50%) scale(1);
+    }
+    100% {
+        transform: translateY(-50%) scale(0.8);
+    }
+}
+
+@keyframes close_bottom {
+    0% {
+        transform: translateY(200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes close_content {
+    0% {
+        min-height: 80vh;
+    }
+    70% {
+        min-height: 25vh;
+    }
+    100% {
+        min-height: 25vh;
+    }
+}
+@keyframes close_top {
+    0% {
+        transform: translateY(calc(-100% - 200px));
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 69vw;
+        margin-left: 4.8vw;
+    }
+    #modal-results #pokedex_haut, #modal-results #pokedex_bas {
+        width: 150%;
+        left: -25%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    @keyframes open_content {
+        0% {
+            min-height: 25vh;
+        }
+        10% {
+            min-height: 25vh;
+        }
+        60% {
+            min-height: 70vh;
+        }
+        100% {
+            min-height: 80vh;
+        }
     }
 }

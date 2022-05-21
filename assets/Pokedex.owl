@@ -1,0 +1,1468 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/paulcazals/ontologies/2022/4/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/paulcazals/ontologies/2022/4/untitled-ontology-7"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:pokedex="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#appartient_au_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#appartient_au_type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#est_faible_contre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#est_faible_contre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#est_immunisé_face -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#est_immunisé_face">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#est_résistent_contre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#est_résistent_contre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#est_très_faible_contre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#est_très_faible_contre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#est_très_résistent_contre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#est_très_résistent_contre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#évolue_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#évolue_de">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#évolue_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#évolue_en">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Caractéristique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Caractéristique"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Morale -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Morale">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Caractéristique"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Nom_Pokemon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Nom_Pokemon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Morale"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Physique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Physique">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Caractéristique"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Taille_Pokemon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Taille_Pokemon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Physique"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#id_Pokedex -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#id_Pokedex">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Morale"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#link_png -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#link_png">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Morale"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poids_Pokemon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poids_Pokemon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Physique"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Légendaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Légendaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Apireine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Apireine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_très_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Apitrini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Apitrini"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Arceus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Arceus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">320</pokedex:Taille_Pokemon>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32000</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">493</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/2/26/Arceus-DEPS.png</pokedex:link_png>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Archéodong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Archéodong"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Archéomire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Archéomire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#tenebre"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#dragon"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">436</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/3/3a/Archéomire-DP.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6050</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Babimanta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Babimanta"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Bastiodon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Bastiodon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Baudrive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Baudrive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#tenebre"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poison"/>
+        <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">425</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/d/d7/Baudrive-DP.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Blizzaroi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Blizzaroi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Blizzi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Blizzi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Boskara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Boskara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poison"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">388.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/a/ad/Boskara-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">97000.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Bouldeneu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Bouldeneu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Capidextre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Capidextre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Carchacrok -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Carchacrok">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#dragon"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#dragon"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poison"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_très_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">445</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/6/69/Carchacrok-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9500</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Carmache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Carmache"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Castorno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Castorno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/d/d9/Castorno-DP.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3150.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Ceribou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Ceribou"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Ceriflor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Ceriflor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Chaffreux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Chaffreux"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Chaglam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Chaglam"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Charkos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Charkos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Cheniselle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Cheniselle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Cheniti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Cheniti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">412</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/9/90/Cheniti_%28Cape_Plante%29-DP.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3400</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Chimpenfeu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Chimpenfeu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres"/>
+        <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">391.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/2/2b/Chimpenfeu-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2200.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Coatox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Coatox"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Corboss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Corboss"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Coudlangue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Coudlangue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Cradopaux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Cradopaux"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Cresselia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Cresselia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Crikzik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Crikzik">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">401.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/f/f0/Crikzik-DP.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2200.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Créfadet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Créfadet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Légendaire"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">482</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/Fichier:Créfadet-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Créfollet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Créfollet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Légendaire"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">481</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/b/b9/Créfollet-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Créhelf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Créhelf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Légendaire"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/d/d0/Créhelf-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Darkrai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Darkrai"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Dialga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Dialga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Légendaire"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#dragon"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">483</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/e/e4/Dialga-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68300</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Dimoret -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Dimoret">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#tenebre"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#tenebre"/>
+        <pokedex:est_très_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">461</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/e/e7/Dimoret-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3400</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Dinoclier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Dinoclier"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Drascore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Drascore"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Ecayon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Ecayon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Elekable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Elekable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Etouraptor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Etouraptor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">120.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">398.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/8/89/Étouraptor-DP.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2490.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Etourmi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Etourmi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">396.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/6/64/Étourmi-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Etourvol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Etourvol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">397.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/9/9f/Étourvol-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1550.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Gallame -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Gallame"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Giratina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Giratina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Givrali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Givrali"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Goinfrex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Goinfrex"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Griknot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Griknot"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Grodrive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Grodrive"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Heatran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Heatran"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Hippodocus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Hippodocus"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Hippopotas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Hippopotas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Keunotor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Keunotor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">399.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/1/12/Keunotor-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000.0</pokedex:poids_Pokemon>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Korillon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Korillon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Kranidos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Kranidos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poison"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">408</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/1/1c/Kranidos-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31500</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Laporeille -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Laporeille"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Lixy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Lixy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">403.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/8/8d/Lixy-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">950.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Lockpin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Lockpin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Lucario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Lucario"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Luminéon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Luminéon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Luxio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Luxio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">404</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/b/b6/Luxio-DP.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3050</pokedex:poids_Pokemon>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Luxray -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Luxray"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Maganon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Maganon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Magireve -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Magireve"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Magnézone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Magnézone"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Mammochon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Mammochon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Manaphy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Manaphy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Manzaï -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Manzaï"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Mime_Jr. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Mime_Jr."/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Momartik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Momartik"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Motisma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Motisma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Moufflair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Moufflair"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Moufouette -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Moufouette">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poison"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#tenebre"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poison"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#tenebre"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">434</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/9/9b/Moufouette-DP.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1920</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Mustébouée -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Mustébouée"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Mustéflott -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Mustéflott"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Mélokrik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Mélokrik">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">402.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/0/04/Mélokrik-DP.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2550.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Noctunoir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Noctunoir"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Ouisticram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Ouisticram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">390.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/7/76/Ouisticram-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">620.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pachirisu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pachirisu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Palkia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Palkia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Papilord -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Papilord"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Phione -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Phione"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Phyllali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Phyllali"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pijako -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pijako"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pingoléon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pingoléon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poison"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#dragon"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">395.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/1/14/Pingoléon-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">170.0</pokedex:poids_Pokemon>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8450.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Porygon-Z -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Porygon-Z"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Prinplouf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Prinplouf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">394.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/c/c5/Prinplouf-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2300.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Ptiravi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Ptiravi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Rapion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Rapion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Regigigas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Regigigas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Légendaire"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">370</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">486</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/0/0a/Regigigas-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42000</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Rhinastoc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Rhinastoc"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Riolu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Riolu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Roserade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Roserade"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Rozbouton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Rozbouton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poison"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">406</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/6/68/Rozbouton-DP.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Sancoki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Sancoki"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Scorevol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Scorevol"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Shaymin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Shaymin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Simiabraz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Simiabraz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres"/>
+        <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">120.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">392.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/4/4b/Simiabraz-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5500.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Spiritomb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Spiritomb"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Tarinorme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Tarinorme"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Tiplouf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Tiplouf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">393.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/c/c2/Tiplouf-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">520.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Togekiss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Togekiss"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Torterra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Torterra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_immunisé_face rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:est_très_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">220.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">389.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/b/b3/Torterra-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">310000.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Tortipousse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Tortipousse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Pokemon_4G"/>
+        <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poison"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Electrik"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
+        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol"/>
+        <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.0</pokedex:Taille_Pokemon>
+        <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">387.0</pokedex:id_Pokedex>
+        <pokedex:link_png>https://www.pokepedia.fr/images/f/f0/Tortipouss-DEPS.png</pokedex:link_png>
+        <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10200.0</pokedex:poids_Pokemon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Tritosor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Tritosor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Vortente -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Vortente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Yanmega -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Yanmega"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#acier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#dragon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#dragon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#eau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#normal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poison -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#poison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#sol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#roche"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#tenebre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#tenebre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#vol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

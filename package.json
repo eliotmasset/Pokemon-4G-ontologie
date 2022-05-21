@@ -1,0 +1,29 @@
+{
+  "name": "pokemon-4g-ontologie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sparql.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node sparql.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliotmasset/Pokemon-4G-ontologie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliotmasset/Pokemon-4G-ontologie/issues"
+  },
+  "homepage": "https://github.com/eliotmasset/Pokemon-4G-ontologie#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "rdf-parse": "^2.0.0",
+    "sparql-client": "^0.2.0",
+    "sparqljs": "^3.5.1",
+    "streamify-string": "^1.0.1",
+    "xhr2": "^0.2.1"
+  }
+}
