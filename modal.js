@@ -92,62 +92,77 @@ function setPokemon(modal, results) {
         }
     }
 
-    document.getElementById("pokedex_name").innerHTML=results[cpt].name;
-
-    var enter = true;
-    document.getElementById("pokedex_type").innerHTML="";
-    Object.entries(results[cpt].type).forEach(([key, value]) => {
-        if (enter)
-            document.getElementById("pokedex_type").innerHTML=getUrl(value);
-        else
-            document.getElementById("pokedex_type").innerHTML+=getUrl(value);
-        enter = false;
-    });
-
-    document.getElementById("pokedex_poids").innerHTML=results[cpt].poids/1000 + " kg";
-    document.getElementById("pokedex_taille").innerHTML=results[cpt].taille/100 + " m";
-    document.getElementById("pokedex_img").src=results[cpt].png;
-    
-    enter = true;
-    document.getElementById("pokedex_tres_faible").innerHTML="";
-    Object.entries(results[cpt].TresFaible).forEach(([key, value]) => {
-        if(enter)
-            document.getElementById("pokedex_tres_faible").innerHTML="Tres faible contre : <br/>";
-        document.getElementById("pokedex_tres_faible").innerHTML+=getUrl(value);
-        enter = false;
-    });
-    enter = true;
-    document.getElementById("pokedex_faible").innerHTML="";
-    Object.entries(results[cpt].Faible).forEach(([key, value]) => {
-        if(enter)
-            document.getElementById("pokedex_faible").innerHTML="Faible contre : <br/>";
-        document.getElementById("pokedex_faible").innerHTML+=getUrl(value);
-        enter = false;
-    });
-    enter = true;
-    document.getElementById("pokedex_fort").innerHTML="";
-    Object.entries(results[cpt].Fort).forEach(([key, value]) => {
-        if(enter)
-            document.getElementById("pokedex_fort").innerHTML="Fort contre : <br/>";
-        document.getElementById("pokedex_fort").innerHTML+=getUrl(value);
-        enter = false;
-    });
-    enter = true;
-    document.getElementById("pokedex_tres_fort").innerHTML="";
-    Object.entries(results[cpt].TresFort).forEach(([key, value]) => {
-        if(enter)
-            document.getElementById("pokedex_tres_fort").innerHTML="Tres fort contre : <br/>";
-        document.getElementById("pokedex_tres_fort").innerHTML+=getUrl(value);
-        enter = false;
-    });
-    enter = true;
-    document.getElementById("pokedex_immunise").innerHTML="";
-    Object.entries(results[cpt].Immunise).forEach(([key, value]) => {
-        if(enter)
-            document.getElementById("pokedex_immunise").innerHTML="Immunisé contre : <br/>";
-        document.getElementById("pokedex_immunise").innerHTML+=getUrl(value);
-        enter = false;
-    });
+    if(results[cpt] != undefined) {
+        document.getElementById("pokedex_name").innerHTML=results[cpt].name;
+        document.getElementById("pokedex_poids").innerHTML=results[cpt].poids/1000 + " kg";
+        document.getElementById("pokedex_taille").innerHTML=results[cpt].taille/100 + " m";
+        document.getElementById("pokedex_img").src=results[cpt].png;
+        
+        var enter = true;
+        document.getElementById("pokedex_type").innerHTML="";
+        Object.entries(results[cpt].type).forEach(([key, value]) => {
+            if (enter)
+                document.getElementById("pokedex_type").innerHTML=getUrl(value);
+            else
+                document.getElementById("pokedex_type").innerHTML+=getUrl(value);
+            enter = false;
+        });
+        
+        enter = true;
+        document.getElementById("pokedex_tres_faible").innerHTML="";
+        Object.entries(results[cpt].TresFaible).forEach(([key, value]) => {
+            if(enter)
+                document.getElementById("pokedex_tres_faible").innerHTML="Tres faible contre : <br/>";
+            document.getElementById("pokedex_tres_faible").innerHTML+=getUrl(value);
+            enter = false;
+        });
+        enter = true;
+        document.getElementById("pokedex_faible").innerHTML="";
+        Object.entries(results[cpt].Faible).forEach(([key, value]) => {
+            if(enter)
+                document.getElementById("pokedex_faible").innerHTML="Faible contre : <br/>";
+            document.getElementById("pokedex_faible").innerHTML+=getUrl(value);
+            enter = false;
+        });
+        enter = true;
+        document.getElementById("pokedex_fort").innerHTML="";
+        Object.entries(results[cpt].Fort).forEach(([key, value]) => {
+            if(enter)
+                document.getElementById("pokedex_fort").innerHTML="Fort contre : <br/>";
+            document.getElementById("pokedex_fort").innerHTML+=getUrl(value);
+            enter = false;
+        });
+        enter = true;
+        document.getElementById("pokedex_tres_fort").innerHTML="";
+        Object.entries(results[cpt].TresFort).forEach(([key, value]) => {
+            if(enter)
+                document.getElementById("pokedex_tres_fort").innerHTML="Tres fort contre : <br/>";
+            document.getElementById("pokedex_tres_fort").innerHTML+=getUrl(value);
+            enter = false;
+        });
+        enter = true;
+        document.getElementById("pokedex_immunise").innerHTML="";
+        Object.entries(results[cpt].Immunise).forEach(([key, value]) => {
+            if(enter)
+                document.getElementById("pokedex_immunise").innerHTML="Immunisé contre : <br/>";
+            document.getElementById("pokedex_immunise").innerHTML+=getUrl(value);
+            enter = false;
+        });
+    }
+    else {
+        document.getElementById("pokedex_name").innerHTML="Pokemon introuvable";
+        document.getElementById("pokedex_poids").innerHTML="";
+        document.getElementById("pokedex_taille").innerHTML="";
+        document.getElementById("pokedex_img").src="assets/ball.png";
+        document.getElementById("pokedex_left").classList.add("disable");
+        document.getElementById("pokedex_right").classList.add("disable");
+        document.getElementById("pokedex_type").innerHTML="";
+        document.getElementById("pokedex_tres_faible").innerHTML="";
+        document.getElementById("pokedex_faible").innerHTML="";
+        document.getElementById("pokedex_fort").innerHTML="";
+        document.getElementById("pokedex_tres_fort").innerHTML="";
+        document.getElementById("pokedex_immunise").innerHTML="";
+    }
 
     modal.onclick = function(e) {
         if(e.target == modal) {
@@ -157,20 +172,11 @@ function setPokemon(modal, results) {
 }
 
 function openModal(id, results) {
+    cpt = 0;
     var modal = document.getElementById(id);
     modal.classList.remove("close");
     modal.classList.add("open");
     modal.style.display = "flex";
-
-    if(Object.keys(results).length==0) {
-        document.getElementById("pokedex_name").innerHTML="Pokemon introuvable";
-        modal.onclick = function(e) {
-            if(e.target == modal) {
-                closeModal(id);
-            }
-        }
-        return;
-    }
     setPokemon(modal, results);
 }
 

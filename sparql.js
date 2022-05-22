@@ -7,6 +7,15 @@ const app = express()
 const XMLHttpRequest = require('xhr2');
 const { param } = require('express/lib/request');
 
+function refractorTypes(json) {
+  let response = {};
+  let cpt = 0;
+  Object.entries(json).forEach(([key, value]) => {
+    response[cpt] = RegExp(/[^#]*$/gm).exec(value.binding["uri"])[0]
+    cpt++;
+  });
+  return response;
+}
 
 function refractor(json) {
   let response = {};
@@ -94,6 +103,32 @@ app.use(bodyParser.json())
     res.sendFile("./assets/Pokedex.owl", { root: __dirname })
   })
 
+  app.get('/types', async (req,res) => {
+    var query = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "+
+    "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "+
+    "PREFIX owl: <http://www.w3.org/2002/07/owl#> "+
+    "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> "+
+    "PREFIX poke: <http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#> "+
+    "SELECT ?type "+
+    "WHERE { ?type a poke:Type }";
+
+    //xml post request
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://localhost:5000/query", true);
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.send(JSON.stringify({"query": query}));
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        if(JSON.parse(xhr.responseText).sparql.results != undefined) {
+          var response = refractorTypes(JSON.parse(xhr.responseText).sparql.results.result);
+          res.json(response);
+          return;
+        }
+        res.json({});
+      }
+    }
+  });
+
   app.post('/pokemon', async (req, res, next) => {
     let params = req.body;
     var query = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "+
@@ -159,7 +194,6 @@ app.use(bodyParser.json())
 
 
     query+="}}"
-    console.log(query);
 
 
     //xml post request

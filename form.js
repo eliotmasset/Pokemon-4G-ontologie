@@ -10,6 +10,10 @@ window.onload = function() {
         upperSlider.oninput = function() {
             lowerVal = parseInt(lowerSlider.value);
             upperVal = parseInt(upperSlider.value);
+            if( upperSlider.parentElement.parentElement.querySelector(".screen").id=="poids_screen")
+                upperSlider.parentElement.parentElement.querySelector(".screen").innerHTML = lowerVal + " kg - " + upperVal + " kg";
+            else
+                upperSlider.parentElement.parentElement.querySelector(".screen").innerHTML = lowerVal + " m - " + upperVal + " m";
 
             if (upperVal < lowerVal + (lowerSlider.max/20)) {
                 lowerSlider.value = upperVal - (lowerSlider.max/20);
@@ -23,6 +27,10 @@ window.onload = function() {
         lowerSlider.oninput = function() {
             lowerVal = parseInt(lowerSlider.value);
             upperVal = parseInt(upperSlider.value);
+            if( upperSlider.parentElement.parentElement.querySelector(".screen").id=="poids_screen")
+                upperSlider.parentElement.parentElement.querySelector(".screen").innerHTML = lowerVal + " kg - " + upperVal + " kg";
+            else
+                upperSlider.parentElement.parentElement.querySelector(".screen").innerHTML = lowerVal + " m - " + upperVal + " m";
 
             if (lowerVal > upperVal - (lowerSlider.max/20)) {
             upperSlider.value = lowerVal + (lowerSlider.max/20);

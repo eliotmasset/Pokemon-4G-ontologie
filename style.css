@@ -67,6 +67,16 @@ input[type=range]::-webkit-slider-thumb::before {
     background-color: grey;
 }
 
+#poids_screen, #taille_screen {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 30px;
+    padding: 2px;
+    transform: translateX(405px);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
