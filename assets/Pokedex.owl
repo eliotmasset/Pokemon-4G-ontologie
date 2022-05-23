@@ -542,7 +542,7 @@
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
         <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</pokedex:Taille_Pokemon>
         <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">482</pokedex:id_Pokedex>
-        <pokedex:link_png>https://www.pokepedia.fr/Fichier:Créfadet-DEPS.png</pokedex:link_png>
+        <pokedex:link_png>https://www.pokepedia.fr/images/8/87/Cr%C3%A9fadet-DEPS.png</pokedex:link_png>
         <pokedex:poids_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</pokedex:poids_Pokemon>
     </owl:NamedIndividual>
     

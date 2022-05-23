@@ -77,6 +77,9 @@ function refractor(json) {
         case "png":
           response[already_in?key_in:cpt]["png"] = value2["literal"];
           break;
+        case "legendaire":
+          response[already_in?key_in:cpt]["legendaire"] = RegExp(/[^#]*$/gm).exec(value2["uri"])[0]=="Légendaire";
+          break;
         default:
           console.log("error : \"" + value2["@name"] + "\" is not a valid key");
           break;
@@ -136,8 +139,8 @@ app.use(bodyParser.json())
       "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "+
       "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> "+
       "PREFIX poke: <http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#> "+
-      "SELECT * "+
-      "WHERE { ?pokemon a poke:Pokemon_4G. ?pokemon poke:poids_Pokemon ?poids. ?pokemon poke:Taille_Pokemon ?taille. ?pokemon poke:appartient_au_type ?type . ?pokemon poke:link_png ?png . OPTIONAL{?pokemon poke:est_très_résistent_contre ?fofo}. OPTIONAL{?pokemon poke:est_résistent_contre ?fo} . OPTIONAL{?pokemon poke:est_faible_contre ?fa}. OPTIONAL{?pokemon poke:est_très_faible_contre ?fafa}. OPTIONAL{?pokemon poke:est_immunisé_contre ?i}.";
+      "SELECT distinct * "+
+      "WHERE { ?pokemon a ?legendaire. ?legendaire rdfs:subClassOf* poke:Pokemon_4G. ?pokemon poke:poids_Pokemon ?poids. ?pokemon poke:Taille_Pokemon ?taille. ?pokemon poke:appartient_au_type ?type . ?pokemon poke:link_png ?png . OPTIONAL{?pokemon poke:est_très_résistent_contre ?fofo}. OPTIONAL{?pokemon poke:est_résistent_contre ?fo} . OPTIONAL{?pokemon poke:est_faible_contre ?fa}. OPTIONAL{?pokemon poke:est_très_faible_contre ?fafa}. OPTIONAL{?pokemon poke:est_immunisé_face ?i}.";
 
     query+="{";
     let types = Object.keys(params.types);
@@ -195,7 +198,6 @@ app.use(bodyParser.json())
 
     query+="}}"
 
-
     //xml post request
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "http://localhost:5000/query", true);
@@ -205,7 +207,8 @@ app.use(bodyParser.json())
       if (xhr.readyState == 4 && xhr.status == 200) {
         if(JSON.parse(xhr.responseText).sparql.results != undefined) {
           var response = refractor(JSON.parse(xhr.responseText).sparql.results.result);
-          console.log(response);
+          console.log(JSON.parse(xhr.responseText).sparql.results.result[Object.keys(JSON.parse(xhr.responseText).sparql.results.result).length-1].binding);
+          console.log(JSON.parse(xhr.responseText).sparql.results.result[0].binding);
           res.json(response);
           return;
         }

@@ -15,7 +15,7 @@ function getUrl(name) {
         case "eau":
             url="<img src=\"assets/badge-eau.png\" />";
             break;
-        case "electrik":
+        case "Electrik":
             url="<img src=\"assets/badge-electrik.png\" />";
             break;
         case "feu":
@@ -94,8 +94,10 @@ function setPokemon(modal, results) {
 
     if(results[cpt] != undefined) {
         document.getElementById("pokedex_name").innerHTML=results[cpt].name;
-        document.getElementById("pokedex_poids").innerHTML=results[cpt].poids/1000 + " kg";
-        document.getElementById("pokedex_taille").innerHTML=results[cpt].taille/100 + " m";
+        document.getElementById("pokedex_infos").innerHTML=results[cpt].poids/1000 + " kg, "+ results[cpt].taille/100 + " m";
+        if(results[cpt].legendaire) {
+            document.getElementById("pokedex_infos").innerHTML+=", légendaire";
+        }
         document.getElementById("pokedex_img").src=results[cpt].png;
         
         var enter = true;
@@ -151,8 +153,7 @@ function setPokemon(modal, results) {
     }
     else {
         document.getElementById("pokedex_name").innerHTML="Pokemon introuvable";
-        document.getElementById("pokedex_poids").innerHTML="";
-        document.getElementById("pokedex_taille").innerHTML="";
+        document.getElementById("pokedex_infos").innerHTML="";
         document.getElementById("pokedex_img").src="assets/ball.png";
         document.getElementById("pokedex_left").classList.add("disable");
         document.getElementById("pokedex_right").classList.add("disable");
