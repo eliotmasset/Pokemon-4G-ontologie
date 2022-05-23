@@ -68,22 +68,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#évolue_de -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#évolue_de">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#évolue_en -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#évolue_en">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -471,7 +455,6 @@
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
-        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres"/>
         <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
         <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.0</pokedex:Taille_Pokemon>
         <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">391.0</pokedex:id_Pokedex>
@@ -537,7 +520,6 @@
         <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
         <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
         <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
-        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres"/>
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
         <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</pokedex:Taille_Pokemon>
@@ -555,7 +537,6 @@
         <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
         <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
         <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
-        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres"/>
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
         <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</pokedex:Taille_Pokemon>
@@ -573,7 +554,6 @@
         <pokedex:appartient_au_type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
         <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
         <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#spectre"/>
-        <pokedex:est_faible_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres"/>
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#combat"/>
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#psy"/>
         <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</pokedex:Taille_Pokemon>
@@ -1217,7 +1197,6 @@
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#feu"/>
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#glace"/>
         <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#plante"/>
-        <pokedex:est_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres"/>
         <pokedex:est_très_résistent_contre rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#insecte"/>
         <pokedex:Taille_Pokemon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">120.0</pokedex:Taille_Pokemon>
         <pokedex:id_Pokedex rdf:datatype="http://www.w3.org/2001/XMLSchema#float">392.0</pokedex:id_Pokedex>
@@ -1442,14 +1421,6 @@
     <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#tenebre -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#tenebre">
-        <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#ténèbres">
         <rdf:type rdf:resource="http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#Type"/>
     </owl:NamedIndividual>
     
