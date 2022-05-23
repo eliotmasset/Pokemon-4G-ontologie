@@ -307,6 +307,7 @@ button.submit:hover::after {
     align-items: center;
     flex-wrap: wrap;
     color: #fff;
+    opacity: 0.7;
 }
 
 #modal-results #pokedex_imgs {

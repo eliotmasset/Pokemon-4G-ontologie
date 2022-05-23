@@ -77,6 +77,9 @@ function refractor(json) {
         case "png":
           response[already_in?key_in:cpt]["png"] = value2["literal"];
           break;
+        case "id":
+          response[already_in?key_in:cpt]["id"] = +(value2["literal"]["#text"]);
+          break;
         case "legendaire":
           response[already_in?key_in:cpt]["legendaire"] = RegExp(/[^#]*$/gm).exec(value2["uri"])[0]=="Légendaire";
           break;
@@ -140,7 +143,7 @@ app.use(bodyParser.json())
       "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> "+
       "PREFIX poke: <http://www.semanticweb.org/paulcazals/ontologies/2022/4/pokedex#> "+
       "SELECT distinct * "+
-      "WHERE { ?pokemon a ?legendaire. ?legendaire rdfs:subClassOf* poke:Pokemon_4G. ?pokemon poke:poids_Pokemon ?poids. ?pokemon poke:Taille_Pokemon ?taille. ?pokemon poke:appartient_au_type ?type . ?pokemon poke:link_png ?png . OPTIONAL{?pokemon poke:est_très_résistent_contre ?fofo}. OPTIONAL{?pokemon poke:est_résistent_contre ?fo} . OPTIONAL{?pokemon poke:est_faible_contre ?fa}. OPTIONAL{?pokemon poke:est_très_faible_contre ?fafa}. OPTIONAL{?pokemon poke:est_immunisé_face ?i}.";
+      "WHERE { ?pokemon a ?legendaire. ?legendaire rdfs:subClassOf* poke:Pokemon_4G. ?pokemon poke:id_Pokedex ?id. ?pokemon poke:poids_Pokemon ?poids. ?pokemon poke:Taille_Pokemon ?taille. ?pokemon poke:appartient_au_type ?type . ?pokemon poke:link_png ?png . OPTIONAL{?pokemon poke:est_très_résistent_contre ?fofo}. OPTIONAL{?pokemon poke:est_résistent_contre ?fo} . OPTIONAL{?pokemon poke:est_faible_contre ?fa}. OPTIONAL{?pokemon poke:est_très_faible_contre ?fafa}. OPTIONAL{?pokemon poke:est_immunisé_face ?i}.";
 
     query+="{";
     let types = Object.keys(params.types);
@@ -160,6 +163,7 @@ app.use(bodyParser.json())
 
     let taille = params.values.taille;
     query+= ". FILTER(?taille >= "+taille.min+" && ?taille <= "+taille.max+") . {";
+
     start = true;
     Object.keys(params.combat).forEach(function(type){
       let start2 = true;
@@ -197,6 +201,7 @@ app.use(bodyParser.json())
 
 
     query+="}}"
+    console.log(query);
 
     //xml post request
     var xhr = new XMLHttpRequest();

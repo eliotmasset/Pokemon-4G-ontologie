@@ -1,4 +1,41 @@
+var globalResponse = null;
 window.onload = function() {
+
+    function event(e) {
+
+        e.preventDefault();
+        e.stopPropagation();
+        console.log(e.code);
+        switch(e.code) {
+            case "ArrowLeft":
+                if(cpt > 0) {
+                    cpt--;
+                    var audio = document.getElementById("audio_touche");
+                    audio.pause();
+                    audio.currentTime = 0;
+                    audio.play();
+                    setPokemon(document.getElementById("modal-results"), globalResponse);
+                }
+                break;
+            case "ArrowRight":
+                if(cpt < Object.keys(globalResponse).length-1) {
+                    cpt++;
+                    var audio = document.getElementById("audio_touche");
+                    audio.pause();
+                    audio.currentTime = 0;
+                    audio.play();
+                    setPokemon(document.getElementById("modal-results"), globalResponse);
+                }
+                break;
+            case "Escape":
+                closeModal("modal-results");
+                document.removeEventListener("keydown", event);
+                break;
+            default:
+                break;
+            }
+    }
+
     var sliders = document.getElementsByClassName("multi-range");
     for (let i=0; i<sliders.length; i++) {
         let slider=sliders[i];
@@ -50,6 +87,7 @@ window.onload = function() {
         json.values = {};
         json.types = {};
         json.combat = {};
+        json.values.taux_capture = {};
         var types = document.querySelectorAll("#type .type");
         var types_combat = document.querySelectorAll("#table-combat input[type='checkbox']");
         for (let i=0; i<sliders.length; i++) {
@@ -81,6 +119,8 @@ window.onload = function() {
                 let response=JSON.parse(xhr.responseText);
                 console.log(response);
                 openModal("modal-results", response);
+                globalResponse = response;
+                document.addEventListener("keydown", event);
             }
         }
 
@@ -115,6 +155,10 @@ window.onload = function() {
                 divType.appendChild(label);
                 list.appendChild(divType);
                 label.onclick = function() {
+                    var audio = document.getElementById("audio_touche");
+                    audio.pause();
+                    audio.currentTime = 0;
+                    audio.play();
                     console.log(typeCheckBox.checked);
                     typeCheckBox.checked = !typeCheckBox.checked;
                 }
@@ -141,18 +185,38 @@ window.onload = function() {
                 tdImmunise.innerHTML =  "<input type=\"checkbox\" data-row=\""+entries[1]+"\" data-col=\"Immunise\" name=\""+entries[1]+"Immunisé\" />"+
                                         "<img src=\"assets/ball.png\" alt=\"select\" /> "
                 tdTresFort.querySelector("img").onclick = function() {
+                    var audio = document.getElementById("audio_touche");
+                    audio.pause();
+                    audio.currentTime = 0;
+                    audio.play();
                     tdTresFort.querySelector("input[type='checkbox']").checked = !tdTresFort.querySelector("input[type='checkbox']").checked;
                 }
                 tdFort.querySelector("img").onclick = function() {
+                    var audio = document.getElementById("audio_touche");
+                    audio.pause();
+                    audio.currentTime = 0;
+                    audio.play();
                     tdFort.querySelector("input[type='checkbox']").checked = !tdFort.querySelector("input[type='checkbox']").checked;
                 }
                 tdFaible.querySelector("img").onclick = function() {
+                    var audio = document.getElementById("audio_touche");
+                    audio.pause();
+                    audio.currentTime = 0;
+                    audio.play();
                     tdFaible.querySelector("input[type='checkbox']").checked = !tdFaible.querySelector("input[type='checkbox']").checked;
                 }
                 tdTresFaible.querySelector("img").onclick = function() {
+                    var audio = document.getElementById("audio_touche");
+                    audio.pause();
+                    audio.currentTime = 0;
+                    audio.play();
                     tdTresFaible.querySelector("input[type='checkbox']").checked = !tdTresFaible.querySelector("input[type='checkbox']").checked;
                 }
                 tdImmunise.querySelector("img").onclick = function() {
+                    var audio = document.getElementById("audio_touche");
+                    audio.pause();
+                    audio.currentTime = 0;
+                    audio.play();
                     tdImmunise.querySelector("input[type='checkbox']").checked = !tdImmunise.querySelector("input[type='checkbox']").checked;
                 }
                 tr.appendChild(th);

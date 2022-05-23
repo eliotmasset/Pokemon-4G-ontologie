@@ -82,18 +82,26 @@ function setPokemon(modal, results) {
     document.getElementById("pokedex_left").onclick = function() {
         if(cpt > 0) {
             cpt--;
+            var audio = document.getElementById("audio_touche");
+            audio.pause();
+            audio.currentTime = 0;
+            audio.play();
             setPokemon(modal, results);
         }
     }
     document.getElementById("pokedex_right").onclick = function() {
         if(cpt < Object.keys(results).length-1) {
             cpt++;
+            var audio = document.getElementById("audio_touche");
+            audio.pause();
+            audio.currentTime = 0;
+            audio.play();
             setPokemon(modal, results);
         }
     }
 
     if(results[cpt] != undefined) {
-        document.getElementById("pokedex_name").innerHTML=results[cpt].name;
+        document.getElementById("pokedex_name").innerHTML=results[cpt].name + " #"+results[cpt].id;
         document.getElementById("pokedex_infos").innerHTML=results[cpt].poids/1000 + " kg, "+ results[cpt].taille/100 + " m";
         if(results[cpt].legendaire) {
             document.getElementById("pokedex_infos").innerHTML+=", légendaire";
@@ -173,11 +181,16 @@ function setPokemon(modal, results) {
 }
 
 function openModal(id, results) {
+    var audio = document.getElementById("audio_pokedex");
+    audio.pause();
+    audio.currentTime = 0;
+    audio.play();
     cpt = 0;
     var modal = document.getElementById(id);
     modal.classList.remove("close");
     modal.classList.add("open");
     modal.style.display = "flex";
+
     setPokemon(modal, results);
 }
 
