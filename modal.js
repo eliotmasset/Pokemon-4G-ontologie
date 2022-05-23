@@ -48,8 +48,8 @@ function getUrl(name) {
         case "spectre":
             url="<img src=\"assets/badge-spectre.png\" />";
             break;
-        case "tenebres":
-            url="<img src=\"assets/badge-tenebres.png\" />";
+        case "tenebre":
+            url="<img src=\"assets/badge-tenebre.png\" />";
             break;
         case "vol":
             url="<img src=\"assets/badge-vol.png\" />";
