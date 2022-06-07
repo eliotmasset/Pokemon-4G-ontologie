@@ -174,7 +174,7 @@ sudo node server.js
 sudo py server.py
 ```
 
-6. Open your browser and go on "file://path/to/index.html"
+4. Open your browser and go on "file://path/to/index.html"
 
 PS: You have to disable CORS policy on your browser
 
